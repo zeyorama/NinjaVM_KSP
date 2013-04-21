@@ -1,0 +1,21 @@
+Um die Fehler zu deuten, welches die NJVM zurück gibt, wird hier jeder wahrscheinliche Fehler nummeriert und aufgelistet.
+Folgende Rückgabewerte bedeuten jeweils eine Art von Fehler oder nicht Fehler:
+
+  Derzeit vorhandene Returnvalues : 14
+
+	0		: Fehlerfreie Beendigung der NJVM
+
+	1		: Falsch eingegebene/s Option/Flag
+	2   : Programm über den Debugger geschlossen(keine Instruktionsfehler aufgetreten)
+
+	-1	: Falscher Dateiname bzw. Pfad + Dateiname, die Datei wurde nicht gefunden bzw. existiert nicht
+	-2	: Es wurden mehr oder weniger Datensätze aus einer Datei gelesen, als vorher berechnet (meist weniger)
+	-3	: Debugger gestartet ohne "input file" (kompiliertes & assembliertes Ninja-Programm [*.bin])
+	-4	: Eingegebenes command für den Debbuger nicht vorhanden
+	-7	: Es befindet sich kein Platz mehr auf dem Stack (Stack overflow)
+	-8	: Der Stack ist leer und es kann kein Element heruntergenommen werden (Stack underflow)
+	-9	: Es wurde auf einen ungültigen Bereich des "Program Memory" zugegriffen (ausserhalb des zulässigen Bereichs)
+	-10	: Division durch null(0)
+	-11	: Fehler beim decodieren einer Instruktion bzw. decodierte Instruktion kann nicht von der NJVM verarbeitet werden
+	-12 : Auswertung eines Ergebnisses einer bool'schen Operation entspricht weder 0 noch 1
+	-13 : Allokierung eines Stack Frames überschreitet den Stackbereich (allocate stack frame error, stack overflow)

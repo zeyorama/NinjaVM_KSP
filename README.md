@@ -1,2 +1,7 @@
-NinjaVM_KSP
+NinjaVM
 ===========
+
+Virtual machine for NinjaBytecode.
+
+THM MNI
+KSP

@@ -1,0 +1,3 @@
+#!/bin/sh
+gcc -Wall -ansi -pedantic -o njvm njvm.c debug.c interpreter.c
+chmod +x njvm
